@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="port.css" />
+    <script
+      src="https://kit.fontawesome.com/d2b224395e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/Tarun_logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i
+              class="fa-sharp fa-solid fa-circle-xmark"
+              onclick="closemenu()"
+            ></i>
+          </ul>
+          <i class="fa-sharp fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <!-- <p>UI/UX Designer</p> -->
+          <h1>
+            Hi,I'm <span>Chelli Tarun</span> <br />
+            Software Developer
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!--About-->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/User.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p>
+              Hello, I'm Chelli Tarun, currently pursuing my final year of B.Tech in Computer Science
+              at Centurion University of Technology and Management.I have hands-on experience with Java,
+              React.js, and Spring Boot, and I am passionate about software development, 
+              particularly in creating solutions that help bridge gaps in service delivery.
+              I consider myself a creative thinker with a strong interest in webpage UI design
+              and enjoy working on projects that require multi-disciplinary collaboration.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <!-- <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p> -->
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <!-- <li><span>UI/UX</span><br />Designing Web/app interfaces</li> -->
+                <li>
+                  <span>Java</span>          
+                </li>
+                <li>
+                  <span>Html</span>          
+                </li>
+                <li>
+                  <span>css</span>          
+                </li>
+                <li>
+                  <span>Springboot Basics</span>          
+                </li>
+                <li>
+                  <span>Mysql</span>          
+                </li>
+                 
+              </ul>
+            </div>
+            
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2021-2025</span><br />B.Tech from Centurion University Parlakhemundi
+                </li>
+                <li><span>2019-2021</span><br />Intermediate from SKK jr College Chapara</li>
+                <li><span>2014</span><br />Tenth from Z.P.H.S. P.L.Puram</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-----------------------Services ------------------>
+    <!-- <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              "Web design creates visually appealing website layouts using HTML,
+              CSS, and JavaScript for optimal user experience and cross-device
+              functionality."
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              "UX/UI design emphasizes improving overall user satisfaction by
+              enhancing the usability, accessibility, and enjoyment of the
+              product, ensuring a seamless and meaningful experience."
+            </p>
+            <a href="#">Learn more</a>
+          </div> 
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>
+              "App development involves designing, coding, and testing software
+              applications tailored for specific platforms, such as iOS,
+              Android, or cross-platform use."
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!---------------------- portfolio ------------------------->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/NEED-IN.jpeg" alt="" />
+            <div class="layer">
+              <h3>NEED-IN App</h3>
+              <p>
+                Developed a web app using Spring Boot and React to connect
+                users with local skilled workers, enhancing service booking 
+                with improved convenience and efficiency. This platform bridges 
+                the gap between service seekers and providers, ensuring prompt 
+                and reliable assistance.
+              </p>
+              <a href="https://github.com/TarunChelli/Need_IN.git"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/Portfolio.jpeg" alt="" />
+            <div class="layer">
+              <h3>My Portfolio</h3>
+              <p>
+                As a passionate web developer, I created my portfolio using HTML and CSS 
+                to showcase my skills and projects. The site is designed to be clean and professional, 
+                with a responsive layout that adapts seamlessly across devices. I focused on creating 
+                an intuitive user experience, using a well-structured layout and a consistent color 
+                scheme that reflects my personal brand. 
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/Contact Management.jpeg" alt="" />
+            <div class="layer">
+              <h3>Contact Management System</h3>
+              <p>
+                The simple user contact management system developed in Java effectively 
+                demonstrates the practical application of object-oriented programming principles. 
+                Through this project, we've built a functional system that allows users to add, 
+                update, search, and delete contact information.
+              </p>
+              <a href="https://github.com/TarunChelli/PRODIGY_SD_03.git"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    <!-- -------------------------contact----------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>chellitarun2003@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone"></i>8093526899</p>
+            <div class="social-icons">
+              <!-- <a href=""><i class="fa-brands fa-facebook"></i></a> -->
+              <!-- <a href=""><i class="fa-brands fa-instagram"></i></a> -->
+              <a href=""><i class="fa-brands fa-telegram"></i></a>
+              <a href="https://www.linkedin.com/in/chelli-tarun-3a765a26a/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="images/My_CV.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form action="">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="text"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="message"
+                rows="6"
+                placeholder="Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>copyright © Tarun.made with <i class="fa-solid fa-heart"></i>Love</p>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
